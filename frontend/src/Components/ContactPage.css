@@ -1,0 +1,152 @@
+.contact {
+  margin: 40px auto; /* Adjusted top and bottom space for desktop */
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between;
+}
+
+.contact-col {
+  flex-basis: 50%; /* Full width by default */
+  margin-bottom: 30px; /* Add some spacing between columns */
+}
+
+.contact-col h3 {
+  color: #000f38;
+  font-weight: 500;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+  width: 35px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.contact-col p {
+  max-width: 100%; /* Adjusted maximum width */
+  line-height: 1.3;
+  font-size: 16px; /* Adjusted font size */
+}
+
+.contact-col ul li {
+  align-items: center;
+  display: flex;
+  margin: 20px 0;
+}
+
+.contact-col ul li img {
+  width: 35px;
+  margin-right: 10px;
+}
+.contact form input,
+.contact form textarea,
+.contact form select { /* Added select here */
+  display: block;
+  width: 100%;
+  background: #f4c1c139;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  resize: none;
+}
+
+.contact-col span {
+  display: block;
+  margin: 20px 0;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+.contact form select {
+  background: #f4c1c139;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  /* Removed margin-top as it’s unnecessary here */
+}
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Media query for tablets */
+@media (max-width: 800px) {
+  .contact {
+      margin: 30px auto; /* Adjusted margin for tablets */
+  }
+
+  .contact-col {
+      flex-basis: 100%; /* Full width for tablets */
+  }
+
+  .contact-col h3 {
+      font-size: 20px; /* Adjusted font size for tablets */
+  }
+
+  .contact-col p {
+      font-size: 14px; /* Adjusted font size for tablets */
+  }
+
+  .contact form input,
+  .contact form textarea,
+  .contact form select { /* Adjusted padding for tablets */
+      padding: 10px;
+      font-size: 14px; /* Adjusted font size for tablets */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .contact {
+      margin: 20px auto; /* Adjusted margin for mobile */
+  }
+
+  .contact-col {
+      flex-basis: 100%; /* Full width for mobile devices */
+  }
+
+  .contact-col h3 {
+      font-size: 18px; /* Adjusted font size for mobile devices */
+  }
+
+  .contact-col p {
+      font-size: 12px; /* Adjusted font size for mobile devices */
+  }
+
+  .contact form input,
+  .contact form textarea,
+  .contact form select { /* Adjusted padding for mobile devices */
+      padding: 8px;
+      font-size: 12px; /* Adjusted font size for mobile devices */
+  }
+}

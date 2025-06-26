@@ -1,0 +1,22 @@
+/* PrivacyPolicy.css */
+.privacy-policy {
+  width: 80%;
+  margin: 0 auto;
+}
+h2{
+  font-size: 18px;
+}
+p{
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .privacy-policy {
+   width: 90%;
+  }
+}
+
+@media (max-width: 578px) {
+  .privacy-policy {
+    width: 100%;
+  }
+}

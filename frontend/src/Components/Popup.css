@@ -1,0 +1,83 @@
+/* Popup.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content input[type="tel"],
+.popup-content label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content input[type="tel"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.popup-content label {
+  display: flex;
+  align-items: center;
+}
+
+.popup-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.popup-content button[type="submit"] {
+  background-color: #540303f9;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.popup-content button[type="submit"]:hover {
+  background-color: #d40303;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+a {
+  color: inherit; /* This makes the anchor tag inherit the color of the parent element */
+  text-decoration: none; /* This removes the underline */
+}

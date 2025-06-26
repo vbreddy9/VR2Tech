@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 90%;
+  padding: 10px 0;
+}
+.text {
+  text-align: center;
+  padding: 40px;
+}
+.no-vertical-scroll {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+.slide {
+  padding: 0 10px; /* horizontal spacing between cards */
+}
+
+.slick-slide > div {
+  display: flex;
+  height: 100%;
+}
+
+/* === Pricing Card Cleanup === */
+.pricing-card {
+  transition: box-shadow 0.3s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* === Remove Zoom Effect & Prevent Scroll Flicker === */
+.pricing-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: none !important;
+  background-color:  rgba(0, 0, 0, 0.08);;
+}
+
+/* === Tick Icon for List Items === */
+.pricing-card ul li::before {
+  content: "✔ ";
+  color: #198754; /* Bootstrap green */
+  font-weight: bold;
+  margin-right: 6px;
+}

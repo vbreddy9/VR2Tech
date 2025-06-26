@@ -1,0 +1,28 @@
+.sub-hero {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 250px; /* Adjusted height for desktop */
+  background: url(../assets/bg.png) no-repeat center/cover;
+  padding: 0 20px; /* Adjusted padding for responsiveness */
+}
+
+.hero-title {
+  margin: 0; /* Remove default margin */
+  text-align: center;
+}
+
+/* Media query for tablets */
+@media (max-width: 1000px) {
+  .sub-hero {
+    height: 200px; /* Adjusted height for tablets */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 578px) {
+  .sub-hero {
+    height: 250px; /* Adjusted height for mobile devices */
+    padding: 0 10px; /* Adjusted padding for mobile devices */
+  }
+}

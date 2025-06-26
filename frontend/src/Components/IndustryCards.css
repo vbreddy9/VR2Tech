@@ -1,0 +1,9 @@
+.card:hover {
+  transform: scale(1.05); /* Zoom in */
+  box-shadow: 0 8px rgba(208, 6, 27, 0.7); /* Colored shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ensure transition is smooth */
+}

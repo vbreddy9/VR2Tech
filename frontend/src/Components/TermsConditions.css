@@ -1,0 +1,25 @@
+/* TermsConditions.css */
+.terms-conditions {
+  width: 80%;
+  margin: 0 auto;
+}
+h2{
+  padding: 10px;
+  font-size: 18px;
+}
+p{
+  padding: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .terms-conditions {
+    width: 90%;
+  }
+}
+
+@media (max-width: 578px) {
+  .terms-conditions {
+    width: 100%;
+  }
+}

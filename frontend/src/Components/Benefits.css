@@ -1,0 +1,27 @@
+.benefit {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px; /* Add margin-bottom to create gap between cards */
+}
+
+.benefit:hover {
+  box-shadow: 0 0 20px rgba(106, 27, 27, 0.911); /* Add a box shadow effect on hover */
+  transform: scale(1.05); /* Add a slight zoom effect on hover */
+}
+
+@media (max-width: 1000px) {
+  .benefit {
+    padding: 15px; /* Decrease padding for smaller screens */
+    border-radius: 8px; /* Decrease border radius for smaller screens */
+  }
+}
+
+@media (max-width: 578px) {
+  .benefit {
+    padding: 10px; /* Further decrease padding for mobile screens */
+    border-radius: 5px; /* Further decrease border radius for mobile screens */
+    margin-bottom: 15px; /* Reduce margin-bottom for smaller screens */
+  }
+}

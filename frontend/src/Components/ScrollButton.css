@@ -1,0 +1,29 @@
+/* ScrollButton.css */
+.scroll-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: #17a25a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

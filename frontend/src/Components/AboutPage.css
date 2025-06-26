@@ -1,0 +1,99 @@
+.container {
+  width: 90%;
+  max-width: 1200px; /* Set maximum width to prevent horizontal scrolling */
+  margin: 0 auto;
+}
+
+.about {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Make sure the about section takes full width */
+}
+
+.about-left,
+.about-right {
+  flex-basis: 50%; /* Make both columns equal size */
+}
+
+.about_number {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 25px;
+  padding: 10px 17px;
+  border-radius: 10px;
+  max-width: 44px;
+  color: white;
+  background: #831011;
+}
+
+.about_title {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.25;
+  max-width: 1000px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.about_text {
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+.bullet-list {
+  margin-top: 10px;
+  list-style-type: none;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 5px;
+}
+
+.bullet-list li:before {
+  content: '\2714';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #831011;
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.about-right img {
+  max-width: 100%; /* Make sure image doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for tablets */
+@media (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 578px) {
+  .about_title {
+    font-size: 20px; /* Adjusted font size for mobile devices */
+  }
+
+  .about_text {
+    font-size: 16px; /* Adjusted font size for mobile devices */
+  }
+
+  .bullet-list {
+    font-size: 16px; /* Adjusted font size for mobile devices */
+  }
+}

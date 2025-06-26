@@ -1,0 +1,22 @@
+/* PrivacyPolicy.css */
+.refund-policy {
+  width: 80%;
+  margin: 0 auto;
+}
+h2{
+  font-size: 18px;
+}
+p{
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .refund-policy {
+   width: 90%;
+  }
+}
+
+@media (max-width: 578px) {
+  .refund-policy {
+    width: 100%;
+  }
+}

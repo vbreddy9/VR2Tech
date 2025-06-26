@@ -1,0 +1,202 @@
+/* Overlay covers the entire viewport */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.633);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup container */
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;              
+  max-width: 900px;        
+  min-width: 700px;         
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+
+/* Header (Title + Subheading) */
+.popup-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.popup-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.popup-header p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Close "X" button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* 2-column layout */
+.popup-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Left column - image */
+.popup-left {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right column - form */
+.popup-right {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input styles */
+.popup-right input[type="text"],
+.popup-right input[type="email"],
+.popup-right input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.popup-right input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Checkbox + label */
+.popup-right label {
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  line-height: 1.2;
+  
+}
+
+
+.popup-right label input[type="checkbox"] {
+  margin-top: 3px;
+}
+
+/* Submit button */
+.popup-right button {
+  background-color: #560909;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-right button:hover {
+  background-color: #7a1010;
+}
+
+/* Optional result message */
+.popup-right span {
+  font-size: 14px;
+  color: green;
+  margin-top: 5px;
+}
+
+/* ✅ Mobile styles */
+@media (max-width: 768px) {
+  .popup-content {
+    width: 95%;
+    max-width: 95%;
+    min-width: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .popup-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .popup-header p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  .popup-body {
+    flex-direction: column; /* Stack image & form vertically */
+    gap: 20px;
+  }
+
+  .popup-left {
+    display: none; /* Hide image completely */
+  }
+
+  .popup-right {
+    width: 100%;
+  }
+
+  .popup-right input[type="text"],
+  .popup-right input[type="email"],
+  .popup-right input[type="tel"] {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .popup-right label {
+    font-size: 14px;
+  }
+
+  .popup-right button {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .close-button {
+    top: 12px;
+    right: 16px;
+    font-size: 1.4rem;
+  }
+}
+

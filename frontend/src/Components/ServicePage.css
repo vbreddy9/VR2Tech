@@ -1,0 +1,104 @@
+.main-services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 30%;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.service:hover {
+  background-color: #e7e5e5; /* Change background color on hover */
+  transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.service img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.service h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.service button {
+  background-color: #831011;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #831011;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service button:hover {
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid #831011;
+}
+
+.no-text-decoration a {
+  text-decoration: none;
+  color: inherit; /* Ensure the link inherits the color of the surrounding text */
+}
+
+.no-text-decoration a:hover {
+  text-decoration: none; /* Remove text decoration on hover as well */
+}
+
+/* Media query for tablets */
+@media (max-width: 800px) {
+  .service {
+      width: 45%; /* Adjusted width for tablets */
+  }
+
+  .service h2 {
+      font-size: 20px; /* Adjusted font size for tablets */
+  }
+
+  .service p {
+      font-size: 14px; /* Adjusted font size for tablets */
+  }
+
+  .service button {
+      font-size: 14px; /* Adjusted font size for tablets */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .service {
+      margin: 0 10px 30px;
+      width: 100%; /* Adjusted width for mobile devices */
+  }
+
+  .service h2 {
+      font-size: 18px; /* Adjusted font size for mobile devices */
+  }
+
+  .service p {
+      font-size: 12px; /* Adjusted font size for mobile devices */
+  }
+
+  .service button {
+      font-size: 12px; /* Adjusted font size for mobile devices */
+  }
+}

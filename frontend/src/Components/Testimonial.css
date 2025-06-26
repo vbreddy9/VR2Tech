@@ -1,0 +1,98 @@
+.testimonial-section {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px; /* Increase the gap between sections */
+  width: 100%; /* Ensure full width usage */
+}
+
+.testimonial-showcase, .testimonial-slider {
+  width: 100%;
+  max-width: 400px; /* For smaller screens */
+  margin: 0 auto; /* Center align on smaller screens */
+}
+span {
+  color: #960606;
+  align-items: left;
+}
+h2{
+  font: 44px;
+}
+
+/* Two-column layout for larger screens */
+@media (min-width: 800px) {
+  .testimonial-section {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px; /* Limit the width for larger screens */
+    margin: 0 auto; /* Center align the two columns */
+  }
+
+  .testimonial-showcase, .testimonial-slider {
+    width: 45%; /* Set each section to take up nearly half the width */
+  }
+}
+
+.testimonial-item {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(149, 25, 25, 0.211); /* Adding shadow for card effect */
+  transition: transform 0.5s ease-in-out; /* Smooth animation for card */
+  animation: slideIn 0.5s forwards;
+}
+
+.testimonial-item.active {
+  display: flex;
+}
+
+.testimonial-item img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  border: 3px solid #f1f1f1; /* Slight border around image for card effect */
+}
+
+.feedback {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #333;
+  padding: 0 10px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.designation {
+  font-size: 14px;
+  color: #777;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Limit the width of the slider on smaller screens */
+@media (min-width: 600px) {
+  .testimonial-slider {
+    max-width: 500px;
+  }
+}

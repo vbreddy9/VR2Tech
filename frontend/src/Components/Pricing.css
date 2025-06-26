@@ -1,0 +1,72 @@
+.pricing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: #007bff; /* Bootstrap's primary color */
+  color: white;
+}
+
+.card-body ul {
+  text-align: left;
+  padding-left: 0;
+}
+
+.card-body ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.bullet-icon {
+  margin-right: 10px;
+  color: #890000; /* Bullet icon color */
+}
+
+.card-text {
+  color: #3b3d3f; /* Secondary text color (Bootstrap's text-secondary) */
+}
+
+.popular-ribbon {
+  background: #ff5733;
+  color: white;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 5px 0;
+  
+  top: -10px;
+  left: -10px;
+}
+
+.original-price {
+  
+  text-decoration: line-through; /* Add line-through style */
+  opacity: 0.5; /* Make the original price transparent */
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Align items horizontally to the center */
+}
+
+.original-price,
+.discounted-price {
+  margin-right: 5px; /* Add margin for spacing */
+}
+
+.save-text {
+  color: #890000;
+  font-weight: 600;
+  font-size: 1.2rem; /* Increase font size */
+  margin-left: 10px; /* Add margin for spacing */
+}
+
