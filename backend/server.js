@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(requestIp.mw());
 
 // Health check
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.status(200).json("Backend working");
 });
 
@@ -131,7 +131,7 @@ const notifyAdmin = async (formData) => {
 };
 
 // POST route
-app.post("/home/send-email", async (req, res) => {
+app.post("/api/home/send-email", async (req, res) => {
   const ip = req.clientIp || "Unknown";
   const {
     name,
