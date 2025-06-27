@@ -9,10 +9,9 @@ const app = express();
 
 // CORS config
 app.use(cors({
-  origin: "https://vr-2-tech-frontend.vercel.app", // allow your frontend domain
+  origin: "https://vr-2-tech-frontend.vercel.app",
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
-  credentials: true
 }));
 // ✅ Handle OPTIONS preflight requests
 app.options("*", cors());
