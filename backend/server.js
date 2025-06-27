@@ -22,10 +22,10 @@ app.use(bodyParser.json());
 app.use(requestIp.mw());
 
 // Health check
-app.get("/home", (req, res) => {
-  console.log("GET /home: Health check");
+app.get("/", (req, res) => {
   res.status(200).json("Backend working");
 });
+
 
 // Nodemailer transport config
 const transporter = nodemailer.createTransport({
