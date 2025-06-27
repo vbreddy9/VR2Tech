@@ -171,6 +171,5 @@ app.post("/home/send-email", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+const serverless = require("serverless-http");
+module.exports = serverless(app);
