@@ -71,7 +71,7 @@ const AutoPopup = ({ isOpen, onClose, title }) => {
       }
     } catch (error) {
       console.error('Submission error:', error);
-      setResult('Submission failed');
+      setResult(`Submission failed: ${error.message}`);
     }
   };
 
