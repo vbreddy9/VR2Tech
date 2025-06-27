@@ -12,7 +12,11 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "/home/send-email",
+      "dest": "backend/server.js"
+    },
+    {
+      "src": "/home",
       "dest": "backend/server.js"
     },
     {
