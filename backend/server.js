@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(requestIp.mw());
 
 // Health check
-app.get("/home", (req, res) => {
+app.get("/api/home", (req, res) => {
   console.log("GET /home: Health check");
   res.status(200).json("Backend working");
 });
@@ -132,7 +132,7 @@ const notifyAdmin = async (formData) => {
 };
 
 // POST route
-app.post("/home/send-email", async (req, res) => {
+app.post("/api/home/send-email", async (req, res) => {
   const ip = req.clientIp || "Unknown";
   const {
     name,
