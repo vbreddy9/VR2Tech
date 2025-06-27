@@ -9,13 +9,12 @@ const app = express();
 const PORT = 5000;
 
 // CORS config
-app.use(
-  cors({
-    origin: "*", // allow all origins (update for production)
-    methods: ["GET", "POST"],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: "https://vr-2-tech-frontend.vercel.app", // allow your frontend domain
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
 
 // Middleware
 app.use(bodyParser.json());
