@@ -3,7 +3,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const requestIp = require("request-ip");
-const serverless = require("serverless-http");
+
 
 const app = express();
 const PORT = 5000;
@@ -172,4 +172,6 @@ app.post("/home/send-email", async (req, res) => {
   }
 });
 
+const serverless = require('serverless-http');
 module.exports = serverless(app);
+
