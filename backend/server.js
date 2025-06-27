@@ -6,7 +6,6 @@ const requestIp = require("request-ip");
 
 
 const app = express();
-const PORT = 5000;
 
 // CORS config
 app.use(cors({
@@ -15,6 +14,8 @@ app.use(cors({
   allowedHeaders: ["Content-Type"],
   credentials: true
 }));
+// ✅ Handle OPTIONS preflight requests
+app.options("*", cors());
 
 // Middleware
 app.use(bodyParser.json());
