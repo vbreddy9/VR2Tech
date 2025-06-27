@@ -32,7 +32,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "info@vr2tech.in",
-    pass: "lfuq qrtw uyyh imfd", // secure: use environment variable in production
+    pass: "lfuqqrtwuyyhimfd", // secure: use environment variable in production
   },
 });
 
